@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MOVIE } from '../movie/movielist';
 import { Movie } from '../movie/moviemodule';
@@ -7,7 +8,7 @@ import { Movie } from '../movie/moviemodule';
 })
 export class MovieService {
 
-  constructor() { }
+  constructor( ) { }
 
   getMovies(): Movie[] {
     return MOVIE;

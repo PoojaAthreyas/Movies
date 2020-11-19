@@ -8,19 +8,22 @@ import { MovieComponent } from './movie/movie.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { FormsModule } from '@angular/forms';
 import { MylistComponent } from './mylist/mylist.component';
+import { MovielistingComponent } from './movielisting/movielisting.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieComponent,
-   // MovieTrailerComponent,
     MovieDetailsComponent,
-    MylistComponent
+    MylistComponent,
+    MovielistingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
